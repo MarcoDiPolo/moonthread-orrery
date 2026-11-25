@@ -10,6 +10,8 @@ For the first seal, turn Ash once, then Tide once. The pointers reach east, sout
 
 ## Build and install
 
+The downloadable development APK passed the Android build, puzzle tests, signature verification and package identifier checks. The author’s Windows device blocked the unsigned PICO 6.2.1 emulator before it could start, so this preview still needs a playthrough on the official emulator. [Download the APK and SHA-256 checksum](https://github.com/MarcoDiPolo/moonthread-orrery/releases/tag/v0.1.0-preview) · [Build results](https://github.com/MarcoDiPolo/moonthread-orrery/actions/runs/45553123085)
+
 The Android project targets PICO OS 6 and the official PICO emulator. It uses the PICO Spatial SDK 6.2.8, Kotlin 2.1.20, Android API 35, Android Gradle Plugin 8.13.2 and Gradle 8.13. Use a compatible Java 17 or 21 JDK and install the Android SDK Platform 35, Build Tools 35.0.0 and Platform Tools. Point `ANDROID_HOME` to your SDK.
 
 On Windows, run `gradlew.bat :app:testDebugUnitTest :app:assembleDebug`. On macOS or Linux, run `sh gradlew :app:testDebugUnitTest :app:assembleDebug`. The result is `app/build/outputs/apk/debug/app-debug.apk`, an installable development APK for arm64.
